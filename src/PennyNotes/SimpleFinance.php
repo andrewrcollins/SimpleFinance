@@ -1,12 +1,13 @@
 <?php
 
-/*
- * This file is part of the PennyNotes/SimpleFinance package.
+/**
+ * Simple Finance Functions for PHP.
  *
- * (c) Andrew Collins <andrew@dripsandcastle.com>
+ * @author Andrew Collins <andrew@dripsandcastle.com>
+ * @copyright Andrew Collins <andrew@dripsandcastle.com>
+ * @license http://www.opensource.org/licenses/mit-license.html MIT License
  *
- * For the full copyright and license information, please view
- * the LICENSE file that was distributed with this source code.
+ * @link https://github.com/andrewrcollins/SimpleFinance
  */
 
 namespace PennyNotes;
@@ -14,7 +15,11 @@ namespace PennyNotes;
 /**
  * SimpleFinance.
  *
- * @author Andrew Collins
+ * Future Value Interest Factor (FVIF).
+ * Regular Payment at Regular Interval (PMT).
+ *
+ * @see https://en.wikipedia.org/wiki/Time_value_of_money
+ * @see https://secure.php.net/manual/en/book.bc.php
  **/
 class SimpleFinance
 {
