@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-0": {
-            "SimpleFinance": "src/"
+            "PennyNotes\\SimpleFinance": "src/"
         }
     },
     "require": {
