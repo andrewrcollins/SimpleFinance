@@ -1,0 +1,30 @@
+{
+    "name": "andrewrcollins/SimpleFinance",
+    "description": "The andrewrcollins/SimpleFinance package offers simple finance functions for PHP.",
+    "license": "MIT",
+    "homepage": "https://github.com/andrewrcollins/SimpleFinance",
+    "authors": [
+        {
+            "name": "Andrew Collins",
+            "email": "andrew@dripsandcastle.com",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "simple",
+        "finance",
+        "php"
+    ],
+    "support": {
+        "issues": "https://github.com/andrewrcollins/SimpleFinance/issues",
+        "source": "https://github.com/andrewrcollins/SimpleFinance"
+    },
+    "autoload": {
+        "psr-0": {
+            "SimpleFinance": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
