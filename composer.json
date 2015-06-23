@@ -1,6 +1,6 @@
 {
-    "name": "PennyNotes/SimpleFinance",
-    "description": "The PennyNotes/SimpleFinance package offers simple finance functions for PHP.",
+    "name": "penny-notes/SimpleFinance",
+    "description": "The penny-notes/SimpleFinance package offers simple finance functions for PHP.",
     "license": "MIT",
     "homepage": "https://github.com/andrewrcollins/SimpleFinance",
     "authors": [
