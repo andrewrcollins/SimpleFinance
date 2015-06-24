@@ -29,19 +29,19 @@ class SimpleFinance
      * @param float $interestRate interest rate
      * @param int   $periods      periods
      *
-     * @throws InvalidArgumentException if $interestRate is not float
-     * @throws InvalidArgumentException if $periods is not int
+     * @throws \InvalidArgumentException if $interestRate is not float
+     * @throws \InvalidArgumentException if $periods is not int
      *
      * @return float future value interest factor
      */
     public static function fvif($interestRate, $periods)
     {
         if (!is_float($interestRate)) {
-            throw new InvalidArgumentException('$interestRate is not float');
+            throw new \InvalidArgumentException('$interestRate is not float');
         }
 
         if (!is_int($periods)) {
-            throw new InvalidArgumentException('$periods is not int');
+            throw new \InvalidArgumentException('$periods is not int');
         }
 
         if ($periods === 0) {
@@ -50,7 +50,7 @@ class SimpleFinance
 
         $interestFactor = $interestRate + 1;
 
-        if ($interestFactor === 0) {
+        if ($interestFactor == 0) {
             return 0;
         }
 
@@ -75,19 +75,19 @@ class SimpleFinance
      * @param float $presentValue present value
      * @param float $futureValue  future value
      *
-     * @throws InvalidArgumentException if $interestRate is not float
-     * @throws InvalidArgumentException if $periods is not int
+     * @throws \InvalidArgumentException if $interestRate is not float
+     * @throws \InvalidArgumentException if $periods is not int
      *
      * @return float regular payment at regular interval
      */
     public static function pmt($interestRate, $periods, $presentValue, $futureValue)
     {
         if (!is_float($interestRate)) {
-            throw new InvalidArgumentException('$interestRate is not float');
+            throw new \InvalidArgumentException('$interestRate is not float');
         }
 
         if (!is_int($periods)) {
-            throw new InvalidArgumentException('$periods is not int');
+            throw new \InvalidArgumentException('$periods is not int');
         }
 
         if ($interestRate === 0) {
